@@ -1,0 +1,99 @@
+Chemical name,SMILES,Actual,Predicted
+Acetanilide,O=C(Nc1ccccc1)C,-1.4,-1.366145512
+Adenosine,c1nc(c2c(n1)n(cn2)[C@H]3[C@@H]([C@@H]([C@H](O3)CO)O)O)N,-1.73,-1.246949457
+Allopurinol,c1c2c([nH]n1)ncnc2O,-2.26,-0.901484669
+Trimethoprim,COc1cc(cc(c1OC)OC)Cc2cnc(nc2N)N,-2.95,-1.719607827
+Acetazolamide,O=S(=O)(c1nnc(s1)NC(=O)C)N,-2.44,-1.238485724
+Benzoic acid,c1ccc(cc1)C(=O)O,-1.58,-1.860880356
+Salbutamol,OCc1cc(ccc1O)C(O)CNC(C)(C)C,-1.22,-0.889081352
+Quinidine,O(c4cc1c(nccc1[C@H](O)[C@@H]2N3CC[C@@H](C2)[C@@H](/C=C)C3)cc4)C,-2.81,-3.108533829
+Benzamide,c1ccc(cc1)C(=O)N,-0.95,-0.694893167
+Thiamphenicol,ClC(Cl)C(=O)N[C@@H]([C@H](O)c1ccc(cc1)S(=O)(=O)C)CO,-2.15,-2.228074554
+(RS)-Atenolol,CC(C)NCC(COc1ccc(cc1)CC(=O)N)O,-1.21,-1.074489748
+Cimetidine,Cc1c(nc[nH]1)CSCCN\C(=N\C)NC#N,-1.69,-1.22836595
+Diuron,Clc1ccc(NC(=O)N(C)C)cc1Cl,-3.76,-3.36282975
+Chlorprothixene,Clc2cc1C(\c3c(Sc1cc2)cccc3)=C/CCN(C)C,-6.75,-6.085969435
+Cocaine,CN1[C@H]2CC[C@@H]1[C@H]([C@H](C2)OC(=O)c3ccccc3)C(=O)OC,-2.25,-1.034381257
+Naproxen,C[C@@H](c1ccc2cc(ccc2c1)OC)C(=O)O,-4.5,-3.478352819
+Sertraline,Clc1ccc(cc1Cl)[C@H]3c2c(cccc2)[C@@H](NC)CC3,-4.83,-4.927674675
+Cytosine,c1cnc(=O)[nH]c1N,-1.16,-0.917436437
+"1,8-Dihydroxyanthraquinone",c1cc2c(c(c1)O)C(=O)c3c(cccc3O)C2=O,-5.19,-2.996286082
+Cortisone,O=C(CO)[C@@]3(O)CC[C@H]2[C@@H]4CC\C1=C\C(=O)CC[C@]1(C)[C@H]4C(=O)C[C@@]23C,-3.27,-3.159159375
+Diazepam,CN1c2ccc(cc2C(=NCC1=O)c3ccccc3)Cl,-3.75,-3.601322836
+Sulindac,O=S(c1ccc(cc1)\C=C3/c2ccc(F)cc2\C(=C3C)CC(=O)O)C,-4.5,-4.894385171
+Hydroflumethiazide,FC(F)(F)c2c(cc1c(NCNS1(=O)=O)c2)S(=O)(=O)N,-2.97,-2.532351951
+Flurbiprofen,Fc2cc(ccc2c1ccccc1)C(C(=O)O)C,-4.15,-4.088872224
+Famotidine,O=S(=O)(N=C(N)CCSCc1nc(/N=C(/N)N)sc1)N,-2.65,-2.12455746
+Flufenamic acid,FC(F)(F)c1cc(ccc1)Nc2ccccc2C(=O)O,-5.35,-4.642034669
+Equilin,O=C3CC[C@H]4C/2=C/Cc1c(ccc(O)c1)[C@H]\2CC[C@]34C,-5.28,-4.148874245
+Hydrochlorothiazide,O=S(=O)(c1c(Cl)cc2c(c1)S(=O)(=O)NCN2)N,-2.68,-2.76367631
+Paracetamol,CC(=O)Nc1ccc(cc1)O,-1.06,-1.141293264
+Ibuprofen,CC(C)Cc1ccc(cc1)C(C)C(=O)O,-3.59,-3.817597946
+Propranolol,CC(C)NCC(COc1cccc2c1cccc2)O,-3.49,-2.656443984
+Thymol,CC(C)c1ccc(C)cc1O,-2.19,-2.447424416
+Pentoxifylline,O=C2N(c1ncn(c1C(=O)N2CCCCC(=O)C)C)C,-0.56,-2.056082526
+Isoproturon,O=C(Nc1ccc(cc1)C(C)C)N(C)C,-3.47,-3.003215071
+Guanine,c1[nH]c2c(n1)c(=O)[nH]c(n2)N,-4.43,-1.478227429
+Nitrofurantoin,O=[N+]([O-])c2oc(/C=N/N1C(=O)NC(=O)C1)cc2,-3.24,-2.249774486
+L-DOPA (Levodopa),O=C(O)[C@@H](N)Cc1cc(O)c(O)cc1,-1.82,-1.137968048
+Indoprofen,O=C(O)C(c1ccc(cc1)N3C(=O)c2ccccc2C3)C,-4.82,-4.149444409
+Metoclopramide,Clc1cc(c(OC)cc1N)C(=O)NCCN(CC)CC,-3.57,-3.255209607
+Metronidazole,[O-][N+](=O)c1cnc(n1CCO)C,-1.22,-0.779427599
+Papaverine,COc1ccc(cc1OC)Cc2c3cc(c(cc3ccn2)OC)OC,-3.87,-3.834039322
+Nalidixic acid,O=C\2c1c(nc(cc1)C)N(/C=C/2C(=O)O)CC,-3.61,-1.899724727
+1-Naphthol,Oc2cccc1ccccc12,-1.98,-2.12851107
+Niflumic acid,FC(F)(F)c1cc(ccc1)Nc2ncccc2C(=O)O,-4.58,-4.329548802
+Oxytetracycline,CN(C)[C@@H]3C(\O)=C(\C(N)=O)C(=O)[C@@]4(O)C(/O)=C2/C(=O)c1c(cccc1O)[C@@](C)(O)[C@H]2[C@H](O)[C@@H]34,-3.09,-2.867919854
+Phenobarbital,C1(NC(C(c2ccccc2)(C(=O)N1)CC)=O)=O,-2.29,-2.229797764
+Phthalic acid,c1ccc(c(c1)C(=O)O)C(=O)O,-1.49,-2.264039397
+"5,5-Diphenylhydantoin",O=C2NC(=O)NC2(c1ccccc1)c3ccccc3,-3.86,-3.086236515
+Pindolol,CC(C)NCC(O)COc1cccc2[nH]ccc12,-3.79,-2.041961774
+Progesterone,O=C4\C=C2/[C@]([C@H]1CC[C@@]3([C@@H](C(=O)C)CC[C@H]3[C@@H]1CC2)C)(C)CC4,-4.42,-4.689990649
+Phenacetin,O=C(Nc1ccc(OCC)cc1)C,-2.37,-2.090808029
+Pyrene,c1cc2ccc3cccc4c3c2c(c1)cc4,-6.18,-6.189635257
+Pyrazinamide,O=C(N)c1nccnc1,-0.91,-0.652554879
+Salicylic acid,c1ccc(c(c1)C(=O)O)O,-1.93,-1.057050489
+Glipizide,Cc1cnc(cn1)C(=O)NCCc2ccc(cc2)S(=O)(=O)NC(=O)NC3CCCCC3,-5.49,-4.698741512
+Diclofenac,c1ccc(c(c1)CC(=O)O)Nc2c(cccc2Cl)Cl,-5.46,-4.469196062
+Sulfamethoxazole,O=S(=O)(Nc1noc(c1)C)c2ccc(N)cc2,-2.7,-2.316181401
+Sulfamethazine,O=S(=O)(Nc1nc(cc(n1)C)C)c2ccc(N)cc2,-2.73,-2.68833893
+Sulfacetamide,O=S(=O)(c1ccc(N)cc1)NC(=O)C,-1.52,-1.448609585
+Sulfadiazine,O=S(=O)(Nc1ncccn1)c2ccc(N)cc2,-3.53,-2.507515183
+Nadolol,OC(CNC(C)(C)C)COc1cccc2c1C[C@H](O)[C@H](O)C2,-1.01,-2.082613227
+"1,3,5-trichlorobenzene",Clc1cc(Cl)cc(Cl)c1,-4.44,-4.012980081
+Thalidomide,c1ccc2c(c1)C(=O)N(C2=O)C3CCC(=O)NC3=O,-3.7,-1.73318107
+Thymine,Cc1c[nH]c(=O)[nH]c1=O,-1.5,-1.087851118
+Thebaine,O(c5ccc4c2c5O[C@H]3C(/OC)=C\C=C1\[C@H](N(CC[C@]123)C)C4)C,-2.66,-2.940413388
+Uracil,c1c[nH]c(=O)[nH]c1=O,-1.49,-0.875328566
+Uric acid,O=C1\C2=C(/NC(=O)N1)NC(=O)N2,-3.4,-2.315626114
+Atropine,CN3[C@H]1CC[C@@H]3C[C@@H](C1)OC(=O)C(CO)c2ccccc2,-2,-1.931416709
+Linuron,Clc1ccc(NC(=O)N(OC)C)cc1Cl,-3.52,-3.256574574
+Mefenamic acid,O=C(O)c2c(Nc1cccc(c1C)C)cccc2,-6.74,-5.098168271
+Tolbutamide,O=S(=O)(c1ccc(cc1)C)NC(=O)NCCCC,-3.46,-3.110841044
+Codeine,CN1CC[C@]23c4c5ccc(c4O[C@H]2[C@H](C=C[C@H]3[C@H]1C5)O)OC,-1.52,-1.710576722
+Strychnine,O=C7N2c1ccccc1[C@@]64[C@@H]2[C@@H]3[C@@H](OC/C=C5\[C@@H]3C[C@@H]6N(CC4)C5)C7,-3.33,-3.295044458
+4-Aminobenzoic acid,O=C(O)c1ccc(N)cc1,-1.37,-1.930230949
+4-Aminosalicylic acid,O=C(O)c1ccc(cc1O)N,-1.96,-2.229107996
+Antipyrine,O=C2\C=C(/N(N2c1ccccc1)C)C,0.48,-1.40578446
+Chloramphenicol,c1cc(ccc1[C@H]([C@@H](CO)NC(=O)C(Cl)Cl)O)[N+](=O)[O-],-2.11,-1.959572977
+Corticosterone,O=C4\C=C2/[C@]([C@H]1[C@@H](O)C[C@@]3([C@@H](C(=O)CO)CC[C@H]3[C@@H]1CC2)C)(C)CC4,-3.24,-3.478705681
+Dapsone,O=S(=O)(c1ccc(N)cc1)c2ccc(N)cc2,-3.09,-1.940535609
+Primidone,O=C1NCNC(=O)C1(c2ccccc2)CC,-2.64,-2.514252338
+Estrone,O=C4[C@]3(CC[C@@H]2c1ccc(O)cc1CC[C@H]2[C@@H]3CC4)C,-5.32,-4.315106451
+Alclofenac,Clc1cc(ccc1OC\C=C)CC(=O)O,-3.13,-2.734789817
+5-Fluorouracil,c1c(c(=O)[nH]c(=O)[nH]1)F,-1.03,-1.012820158
+Griseofulvin,C[C@@H]1CC(=O)C=C([C@]12C(=O)c3c(cc(c(c3O2)Cl)OC)OC)OC,-3.25,-3.262356423
+Fluometuron,O=C(Nc1cc(ccc1)C(F)(F)F)N(C)C,-3.46,-3.004299067
+Fluconazole,c1cc(c(cc1F)F)C(Cn2cncn2)(Cn3cncn3)O,-1.8,-1.976716111
+Khellin,O=C/1c3c(O\C(=C\1)C)c(OC)c2occc2c3OC,-3.02,-3.770588428
+Clozapine,CN1CCN(CC1)C2=Nc3cc(ccc3Nc4c2cccc4)Cl,-3.24,-4.702249355
+Norethisterone,O=C4\C=C3/[C@@H]([C@H]2CC[C@]1([C@@H](CC[C@]1(C#C)O)[C@@H]2CC3)C)CC4,-4.63,-4.764584228
+Nicotinic acid,c1cc(cnc1)C(=O)O,-0.85,-0.817462741
+Perphenazine,Clc2cc1N(c3c(Sc1cc2)cccc3)CCCN4CCN(CCO)CC4,-4.16,-5.312973308
+Pteridine,n1c2c(ncc1)ncnc2,0.02,-1.073115322
+Salicylamide,O=C(c1ccccc1O)N,-1.84,-1.042445604
+Sulfanilamide,O=S(=O)(c1ccc(N)cc1)N,-1.36,-0.482218965
+Gliclazide,O=S(=O)(c1ccc(cc1)C)NC(=O)NN3CC2CCCC2C3,-4.29,-3.645595519
+Trihexyphenidyl,OC(c1ccccc1)(CCN2CCCCC2)C3CCCCC3,-5.2,-4.463827644
+Triphenylene,c1ccc2c(c1)c3ccccc3c4c2cccc4,-6.73,-7.349696298
+Mifepristone,O=C5\C=C4/C(=C3/[C@@H](c1ccc(N(C)C)cc1)C[C@]2([C@@H](CC[C@]2(C#CC)O)[C@@H]3CC4)C)CC5,-5.9,-6.271621436
