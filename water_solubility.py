@@ -1,5 +1,9 @@
-import turtle
-import random
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
 # Import relevant libraries
 
 import numpy as np
@@ -20,17 +24,34 @@ import base64
 import io
 
 
+# # Code for web app for solubility data
+
+# In[2]:
+
+
 # Use trained lgbmregressor and standard scaler for predicting aqueous
 
 # solubility of organic compounds
 
+
+# In[3]:
+
+
 with open('model.pkl', 'rb') as f:
-    model = pickle.load(f)
+        model = pickle.load(f)
 with open('scaler.pkl', 'rb') as f:
-    scaler = pickle.load(f)
+        scaler = pickle.load(f) 
+
+
+# In[4]:
+
 
 # List of molecular descriptors used in the training set. These descriptors
 # should also be used for the test set
+
+
+# In[5]:
+
 
 descriptor_columns = ['MaxAbsEStateIndex', 'MaxEStateIndex', 'MinAbsEStateIndex', 'MinEStateIndex', 'qed', 'SPS',
  'MolWt', 'HeavyAtomMolWt', 'ExactMolWt', 'NumValenceElectrons', 'NumRadicalElectrons', 'MaxPartialCharge', 'MinPartialCharge','MaxAbsPartialCharge',
@@ -55,21 +76,25 @@ descriptor_columns = ['MaxAbsEStateIndex', 'MaxEStateIndex', 'MinAbsEStateIndex'
  'fr_phos_acid','fr_phos_ester','fr_piperdine','fr_piperzine','fr_priamide','fr_prisulfonamd','fr_pyridine','fr_quatN','fr_sulfide','fr_sulfonamd',
  'fr_sulfone','fr_term_acetylene','fr_tetrazole','fr_thiazole','fr_thiocyan','fr_thiophene','fr_unbrch_alkane','fr_urea']
 
-st.set_page_config(page_title='Aquesous Soubility Prediction App', layout='wide')
 
-# st.sidebar.markdown('<h2 style="color: 5a03fc; background-color:powderblue; border-radius:10px;text-align:center"> Use this Sidebar for solubility prediction <h2/>',unsafe_allow_html=True
-st.sidebar.markdown(
-    '<h2 style="color:#5a03fc;background-color:powderblue; border-radius:10px;text-align:center"> Use this Sidebar for Solubility Prediction </h2>',
-    unsafe_allow_html=True)
+# In[6]:
 
-st.markdown(
-    """This Web Application was developed by [Gashaw M.Goshu](https://www.linkedin.com/in/gsshaw-m-goshu/), PhD in Organic Chemistry.""")
 
-# Display my Linked In page on the main page
-# st.markdown'`Solubility` is defined as the maximum amount of solute that will dissolve in a given amount of solvent to form a saturated solution at a specified temperature, usually at room temperature. This Web App is developed by training 8,594 (90%) data points using 42 algorithms. Best performance was obtained using Light GBM (LGBMR). See the prediction of 98 drug-like compounds that their water solubilities were determined usingvery accurate experiment shown below'.)
+st.set_page_config(page_title='Aquesous Olubility Prediction App',layout='wide')
 
-st.markdown(
-    """Solubility is the maximum amount of solute that will dissolve in a given amount of solvent to form a saturated solution at a specified temperature, usually at room temperature. This web application was developed for predicting water solubilities of drug-like compounds. The model was trained on 8,594 (90%) data points using 42 algorithms, with the best performance obtained by the Light GBM Regressor (LGBMR). It also includes predictions for 98 drug-like compounds whose water solubilities were determined by accurate experiments.""")
+#st.sidebar.markdown('<h2 style="color: 5a03fc; background-color:powderblue; border-radius:10px;text-align:center"> Use this Sidebar for solubility prediction <h2/>',unsafe_allow_html=True
+st.sidebar.markdown('<h2 style="color:#5a03fc;background-color:powderblue; border-radius:10px;text-align:center"> Use this Sidebar for Solubility Prediction </h2>',unsafe_allow_html=True)
+
+st.markdown("""This Web Application was developed by [Gashaw M.Goshu](https://www.linkedin.com/in/gsshaw-m-goshu/), PhD in Organic Chemistry.""")
+                    
+#Display my Linked In page on the main page
+#st.markdown'`Solubility` is defined as the maximum amount of solute that will dissolve in a given amount of solvent to form a saturated solution at a specified temperature, usually at room temperature. This Web App is developed by training 8,594 (90%) data points using 42 algorithms. Best performance was obtained using Light GBM (LGBMR). See the prediction of 98 drug-like compounds that their water solubilities were determined usingvery accurate experiment shown below'.)
+
+st.markdown("""Solubility is the maximum amount of solute that will dissolve in a given amount of solvent to form a saturated solution at a specified temperature, usually at room temperature. This web application was developed for predicting water solubilities of drug-like compounds. The model was trained on 8,594 (90%) data points using 42 algorithms, with the best performance obtained by the Light GBM Regressor (LGBMR). It also includes predictions for 98 drug-like compounds whose water solubilities were determined by accurate experiments.""")
+
+
+# In[7]:
+
 
 def plot_graph(data):
     #model performance using RMSE
@@ -96,6 +121,10 @@ test = pd.read_csv('test_98.csv')
 #Scatter plot for test data
 plot_graph(test)
 
+
+# In[24]:
+
+
 # Calculate the 200 RDKit Descriptors
 def RDKit_descriptors(smiles):
     mols = [Chem.MolFromSmiles(i) for i in smiles]
@@ -111,9 +140,16 @@ def RDKit_descriptors(smiles):
         Mol_descriptors.append(descriptors)
     return Mol_descriptors, desc_names
 
+
+# In[25]:
+
+
 #--------- A function that can generate a csv file for output file to download
 # Big credit : https://discuss.streamlit.io/t/how-to-download-file-in-streamlit/1806/2
 #             https://github.com/dataprofessor/ml-auto-app/blob/main/app.py
+
+
+# In[26]:
 
 
 def file_download(data, file):
@@ -121,6 +157,10 @@ def file_download(data, file):
     f = base64.b64encode(df.encode()).decode()
     link = f'<a href="data:file/csv; base64,{f}" download={file}> Download {file} file</a>'
     return link
+
+
+# In[31]:
+
 
 # User input---------------------------------------------------------------
 # 1. One or few SMILES input
@@ -140,7 +180,7 @@ if one_or_few_SMILES != "[CCCCO]":
     #======= Put the 200 molecular descriptors in data frame
     test_set_with_200_descriptors = pd.DataFrame(Mol_descriptors,
     columns=desc_names)
-    #======= Use only the 200 descriptors listed above
+    #======= Use only the 200 descriptors listed above 
     X_test = test_set_with_200_descriptors[descriptor_columns]
 
     #======= The data was standardized during traning and test set also need to be standardized
@@ -188,5 +228,89 @@ else:
     st.markdown('<div style="border: 2px solid #4908d4;border-radius:20px; padding: 3%;text-align:center"><h5> If you want to test this model, please use the sidebar. If you have few molecules, you can directly put the SMILES in a single or double quotations separated by comma in the sidebar. If you have many molecules, you can put their SMILES strings in a "SMILES" column, upload them and click the button which says "Predict logS of molecules" shown in the sidebar.</h5> <h5 style="color:white; background-color:#0a0605;border-radius:10px;padding: 3%;opacity: 0.7; ">Please also note that prediction is more reliable if the compounds to be predicted are similar with training dataset that is logS values ranges between -7.5 and 1.7.</h5></div>',unsafe_allow_html=True)
 
 
+    
 
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+# https://www.bing.com/videos/riverview/relatedvideo?q=rdkit+fingerprint&mid=A017E0CB43A1A57ED481A017E0CB43A1A57ED481&churl=https%3a%2f%2fwww.youtube.com%2fchannel%2fUCCnDFmEKN91edZuVHVksbVA&FORM=VIRE
+
+# https://www.sciencedirect.com/science/article/pii/S2451929420300851#appsec1
+
+
+# In[ ]:
+
+
+# Gashaw M. Goshu
+
+
+# In[ ]:
+
+
+# https://www.youtube.com/watch?v=1tGlOMd0TMo    (Water solubility, part I)      Done
+# https://www.youtube.com/watch?v=umAtjHD8-NQ    (Water solubility, part II)     8:57
+# https://www.youtube.com/watch?v=C4rG7D90wmE
+# https://www.youtube.com/watch?v=_UbmThglFL4
+
+
+# In[ ]:
+
+
+# https://www.youtube.com/watch?v=9i9SY6Nd1Zw      Done
+# https://www.youtube.com/watch?v=3XwovrAWlPY      Done
 
